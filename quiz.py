@@ -13,7 +13,18 @@ print has_teen(13, 13, 15) #True
 # TODO - write not_string
 
 # TODO - write icy_hot
+def icy_hot(a, b):
+	if a < 0 and b > 100:
+		return True
+	elif a > 100 and b < 0:
+		return True
+	else:
+		return False
 
+print icy_hot(-2, 102) #True
+print icy_hot(2, 70) #False
+print icy_hot(4, 101) #False
+print icy_hot(102, -2)#True
 # TODO - write closer_to
 
 # TODO - write two_as_one
